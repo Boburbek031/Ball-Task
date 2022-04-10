@@ -34,12 +34,12 @@ public class Ball {
         this.color = color;
     }
 
+
     /**
      * Comment for myself
      * To String ni @Override qilib ishlatganda StringBuilder
      * yoki StringJoiner ligigan ishlatish ancha maqul!
      */
-
 //    @Override   // ===> with StringBuilder
 //    public String toString() {
 //        final StringBuilder sb = new StringBuilder("Ball{");
@@ -48,6 +48,7 @@ public class Ball {
 //        sb.append('}');
 //        return sb.toString();
 //    }
+
 
 
     @Override // ==> with StringJoiner
