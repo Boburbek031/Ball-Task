@@ -15,7 +15,6 @@ public class BallService {
         return sumWeight;
     }
 
-
     public int countCollar(List<String> colorList) {
         int counter = 0;
         for (String color : colorList) {

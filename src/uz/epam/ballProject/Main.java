@@ -1,6 +1,6 @@
-package uz.epam;
+package uz.epam.ballProject;
 
-import uz.epam.ballProject.BallService;
+import uz.epam.ballProject.service.BallService;
 
 import java.io.*;
 import java.util.ArrayList;
