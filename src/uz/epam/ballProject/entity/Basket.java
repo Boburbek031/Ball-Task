@@ -1,6 +1,7 @@
-package uz.epam.model;
+package uz.epam.ballProject.entity;
 
 import java.util.List;
+import java.util.StringJoiner;
 
 public class Basket {
 
@@ -22,10 +23,11 @@ public class Basket {
         this.ball = ball;
     }
 
+
     @Override
     public String toString() {
-        return "Basket{" +
-                "ball=" + ball +
-                '}';
+        return new StringJoiner(", ", Basket.class.getSimpleName() + "[", "]")
+                .add("ball=" + ball)
+                .toString();
     }
 }
