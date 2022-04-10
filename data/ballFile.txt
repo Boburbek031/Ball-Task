@@ -1,0 +1,7 @@
+Ball: weight = 0.8 gram, Color ==> BLACK
+Ball: weight = 0.9 kg, Color  ==>  BLUE
+Ball: weight = 0.4 gram, Color ==> BROWN
+Ball: weight = 0.6 gram, Color ==> PINK
+Ball: weight = 0.5 gram, Color ==> RED
+Ball: weight = 0.5 gram, Color ==> YELLOW
+Ball: weight = 0.7 gram, Color ==> WHITE
