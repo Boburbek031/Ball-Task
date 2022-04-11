@@ -1,4 +1,4 @@
-package uz.epam.ballProject.entity.enums;
+package uz.epam.ballProject.entity.type;
 
 public enum Color {
 

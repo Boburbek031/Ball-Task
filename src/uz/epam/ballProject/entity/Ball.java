@@ -1,6 +1,6 @@
 package uz.epam.ballProject.entity;
 
-import uz.epam.ballProject.entity.enums.Color;
+import uz.epam.ballProject.entity.type.Color;
 
 import java.util.StringJoiner;
 

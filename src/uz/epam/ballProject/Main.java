@@ -27,6 +27,7 @@ public class Main {
                 line = reader.readLine();
             }
         } catch (IOException e) {
+            System.out.println("Error in ball data.");
             e.printStackTrace();
         }
 

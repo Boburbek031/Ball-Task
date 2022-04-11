@@ -1,6 +1,6 @@
 package uz.epam.ballProject.service;
 
-import uz.epam.ballProject.entity.enums.Color;
+import uz.epam.ballProject.entity.type.Color;
 
 import java.util.List;
 
