@@ -58,4 +58,25 @@ public class Ball {
                 .add("color='" + color + "'")
                 .toString();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Ball ball = (Ball) o;
+
+        if (Double.compare(ball.weight, weight) != 0) return false;
+        return color == ball.color;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(weight);
+        result = (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (color != null ? color.hashCode() : 0);
+        return result;
+    }
 }
