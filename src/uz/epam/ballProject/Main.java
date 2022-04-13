@@ -5,50 +5,45 @@ import uz.epam.ballProject.service.BallService;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
+        Scanner scanner = null;
         List<String> listWeight = new ArrayList<>();
         List<String> listColors = new ArrayList<>();
+        String line = null;
 
         BallService service = new BallService();
 
         File file = new File("data/ballFile.txt");
 
         // File Reader
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
-            String line = reader.readLine();
-            while (line != null) {
+        try {
+            scanner = new Scanner(file);
+        } catch (FileNotFoundException e) {
+            System.out.println("File is empty. Please, fill the file!");
+        }
+
+        // Я проигнорировал неправильные строки
+        while (scanner.hasNext()) {
+            line = scanner.nextLine();
+
+            String validateWeight = service.validateWeight(line);
+            if (validateWeight != null) {
+                listWeight.add(validateWeight);
                 System.out.println(line);
-                listWeight.add(line.substring(15, 18));
-                listColors.add(line.substring(35));
-                line = reader.readLine();
-            }
-        } catch (IOException e) {
-            System.out.println("Error in ball data.");
-            e.printStackTrace();
+            } else
+                continue;
+
+            String validateColor = service.validateColor(line);
+            if (validateColor != null)
+                listColors.add(validateColor);
         }
 
         System.out.println("\n\nTotal weight in basket ==> " + service.calculateWeight(listWeight));
         System.out.println("Total colors in basket ==> " + service.countCollar(listColors));
-
-
-        // Writer data to file.
-     /*   OutputStream outputStream = null;
-        try {
-            outputStream = new FileOutputStream(file, true);
-            List<Ball> ballList = basket.getBall();
-            for (Ball ball : ballList) {
-                outputStream.write(ball.toString().getBytes());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (outputStream != null)
-                outputStream.close();
-        }*/
-
     }
 }

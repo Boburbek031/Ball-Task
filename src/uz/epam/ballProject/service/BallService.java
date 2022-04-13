@@ -2,10 +2,10 @@ package uz.epam.ballProject.service;
 
 import uz.epam.ballProject.entity.type.Color;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BallService {
-
 
     public double calculateWeight(List<String> weightList) {
         double sumWeight = 0;
@@ -28,5 +28,39 @@ public class BallService {
         return counter;
     }
 
+
+    public String validateColor(String line) {
+
+        List<String> colors = new ArrayList<>();
+        Color[] values = Color.values();
+        String color = line.substring(35);
+
+        for (Color value : values) {
+            colors.add(String.valueOf(value));
+        }
+
+        boolean contains = colors.contains(color);
+
+        // если цвет неправильный, я проигнорировал строку
+        if (contains) {
+            return color;
+        }
+        return null;
+    }
+
+
+    public String validateWeight(String weight) {
+        String validateWeight = weight.substring(15, 18);
+
+        try {
+            // если вес неправильный, я проигнорировал строку
+            if (Integer.parseInt(validateWeight) > 0) {
+                return validateWeight;
+            }
+        } catch (Exception e) {
+            return null;
+        }
+        return null;
+    }
 
 }

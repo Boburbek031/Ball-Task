@@ -1,7 +1,11 @@
-Ball: weight = 0.8 gram, Color ==> BLACK
-Ball: weight = 0.9 kg, Color  ==>  BLUE
-Ball: weight = 0.4 gram, Color ==> BROWN
-Ball: weight = 0.6 gram, Color ==> PINK
-Ball: weight = 0.5 gram, Color ==> RED
-Ball: weight = 0.5 gram, Color ==> YELLOW
-Ball: weight = 0.7 gram, Color ==> WHITE
+Ball: weight = 123 kg, Color  ==>  BLsUE
+Ball: weight = 0.ssas, Color  ==>  B36SCLUE
+Ball: weight = 11 gram, Color ==> BROWN
+Ball: weight = -51 gram, Color ==> RED
+Ball: weight = aaa gram, Color ==> RE31D
+Ball: weight = 147 gram, Color ==> YELLOW
+Ball: weight = 212 gram, Color ==> BROWN
+Ball: weight = 367 gram, Color ==> WHITE
+Ball: weight = -4T gram, Color ==> YELLOW
+Ball: weight = -8H gram, Color ==> BLUE
+Ball: weight =  124 gram, Color ==> WH23ITE
