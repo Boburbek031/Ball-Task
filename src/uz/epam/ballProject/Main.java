@@ -14,7 +14,7 @@ public class Main {
         Scanner scanner = null;
         List<String> listWeight = new ArrayList<>();
         List<String> listColors = new ArrayList<>();
-        String line = null;
+        String line;
 
         BallService service = new BallService();
 
