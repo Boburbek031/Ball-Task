@@ -1,6 +1,6 @@
-package uz.epam.ballProject.service;
+package uz.epam.ballproject.service;
 
-import uz.epam.ballProject.entity.type.Color;
+import uz.epam.ballproject.entity.type.Color;
 
 import java.util.ArrayList;
 import java.util.List;
