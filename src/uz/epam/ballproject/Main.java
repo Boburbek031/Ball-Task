@@ -44,6 +44,6 @@ public class Main {
         }
 
         System.out.println("\n\nTotal weight in basket ==> " + service.calculateWeight(listWeight));
-        System.out.println("Total colors in basket ==> " + service.countCollar(listColors));
+        System.out.println("Total colors in basket ==> " + service.countColor(listColors));
     }
 }
