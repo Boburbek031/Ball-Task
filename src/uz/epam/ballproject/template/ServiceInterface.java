@@ -10,7 +10,6 @@ public interface ServiceInterface {
 
     String validateColor(String line);
 
-
     String validateWeight(String weight);
 
 }

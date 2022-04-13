@@ -8,6 +8,7 @@ import java.util.List;
 
 public class BallService implements ServiceInterface {
 
+
     @Override
     public double calculateWeight(List<String> weightList) {
         double sumWeight = 0;

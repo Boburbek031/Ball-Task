@@ -48,9 +48,6 @@ public class Ball {
 //        sb.append('}');
 //        return sb.toString();
 //    }
-
-
-
     @Override // ==> with StringJoiner
     public String toString() {
         return new StringJoiner(", ", Ball.class.getSimpleName() + "[", "]")
